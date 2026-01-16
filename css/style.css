@@ -283,19 +283,28 @@ footer {
 @media (max-width: 768px) {
 
   .nav-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;        /* 🔑 sigue horizontal */
+    flex-wrap: wrap;            /* permite ajustar */
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .logo {
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
   }
 
   .nav-links {
-    flex-direction: row;       /* sigue horizontal */
-    flex-wrap: wrap;           /* se ajusta al ancho */
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 0.8rem;
   }
 
   .nav-links a {
-    font-size: 0.95rem;        /* un poco más pequeño */
-    white-space: nowrap;       /* evita cortes */
+    font-size: 0.9rem;
+    white-space: nowrap;
   }
 }
+
