@@ -1,0 +1,285 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout principal */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #ffffff;
+  color: #111;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* El contenido ocupa el espacio disponible */
+main {
+  flex: 1;
+}
+
+/* Footer normal */
+footer {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* IMAGES */
+.images-section {
+  margin: 2.5rem 0;
+}
+
+.single-image {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.single-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.single-image figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.6rem;
+}
+
+/* NAVBAR */
+.navbar {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  background-color: #405C78;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: #111;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.award {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Parrafos */
+.paragraph {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+/* CONTENT */
+.content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+
+/* Links normales */
+.content a {
+  color: #405C78;        /* color navbar */
+  text-decoration: underline;
+}
+
+/* Hover */
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* Links visitados */
+.content a:visited {
+  color: #555;           /* color footer */
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  width: 380px;
+  border: 1px solid #ccc;
+}
+
+/* EDUCATION */
+.education .degree {
+  margin-bottom: 2rem;
+}
+
+.education h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.education .institution {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+/* CV SECTIONS */
+.cv-section {
+  margin-top: 2.5rem;
+}
+
+.cv-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.cv-section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.cv-section li {
+  margin-bottom: 0.6rem;
+}
+
+/* PUBLICATIONS */
+.publications-section {
+  margin-top: 2rem;
+}
+
+.publications-list {
+  margin-left: 1.5rem;
+}
+
+.publications-list li {
+  margin-bottom: 1.5rem;
+}
+
+.publications-list a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.publications-list a:hover {
+  text-decoration: underline;
+}
+
+/* TEACHING & ADVISING */
+.teaching-section {
+  margin-top: 2.5rem;
+}
+
+.teaching-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
+.teaching-section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.teaching-section li {
+  margin-bottom: 0.6rem;
+}
+
+/* CONTACT */
+.contact-section {
+  margin-top: 2.5rem;
+}
+
+.contact-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
+
+.contact-note {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: 2;
+  }
+
+  .hero-text {
+    order: 1;
+  }
+}
+
+  
+
+
